@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Yuval Qen, a professional Growth Hacker
+subtitle: My journey and Internet adventures
+author: Yuval Qen
 simple_search: http://google.com/search
 description:
 
@@ -98,3 +98,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Gravatar
+gravatar_hash: f214aab113eac2a924ae7b8053827cc6
