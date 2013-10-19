@@ -15,13 +15,36 @@ layout: default
   </section>
   <div class="container">
     <div class="row" id="post-container">
-    {% assign index = true %}
-    {% for post in paginator.posts %}
-    {% assign content = post.content %}
       <article class="span4">
-        {% include article.html %}
+        <div class="article-format">
+          <h1 class="entry-title"><a href="{{ root_url }}/blog/categories/growing-growth-hacker">Journey of a growing growth hacker</a></h1>
+          <div id="blog-archives" class="category">
+            {% for post in site.categories['Growing Growth Hacker'] %}
+            <article class="archive-article-format">
+              {% include archive_post.html %}
+            </article>
+            {% endfor %}
+          </div>
+        </div>
       </article>
-    {% endfor %}
+      <article class="span4">
+        <div class="article-format">
+          <h1 class="entry-title"><a href="{{ root_url }}/categories/case-studies">Case Studies</a></h1>
+          <div id="blog-archives" class="category">
+            {% for post in site.categories['Case Studies'] %}
+            <article class="archive-article-format">
+              {% include archive_post.html %}
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+      </article>
+      <article class="span4">
+        <div class="article-format">
+          <h1 class="entry-title">About me</h1>
+          <div>I am Yuval Qen... I do such and such... and some more brief about me</div>
+        </div>
+      </article>
     </div>
       <div class="row">
         <ul class="pager">
