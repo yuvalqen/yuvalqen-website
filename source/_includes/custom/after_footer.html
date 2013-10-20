@@ -2,3 +2,11 @@
 {% include facebook_like.html %}
 {% include google_plus_one.html %}
 {% include twitter_sharing.html %}
+
+<link rel="stylesheet" href="stylesheets/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="javascripts/libs/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
