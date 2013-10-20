@@ -19,12 +19,10 @@ layout: default
         <div class="article-format rectangular-article-format">
           <h1 class="entry-title"><a href="{{ root_url }}/blog/categories/growing-growth-hacker">Journey of a growing growth hacker</a></h1>
           <div id="blog-archives" class="category">
-            {% for post in site.categories['Growing Growth Hacker'] %}
-            {% if forloop.index < 3 %}
+            {% for post in site.categories['Growing Growth Hacker'] limit: 2 %}
             <article class="archive-article-format">
               {% include archive_post.html %}
             </article>
-            {% endif %}
             {% endfor %}
           </div>
         </div>
@@ -33,12 +31,10 @@ layout: default
         <div class="article-format rectangular-article-format">
           <h1 class="entry-title"><a href="{{ root_url }}/blog/categories/case-studies">Case Studies</a></h1>
           <div id="blog-archives" class="category">
-            {% for post in site.categories['Case Studies'] %}
-            {% if forloop.index < 3 %}
+            {% for post in site.categories['Case Studies'] limit: 2 %}
             <article class="archive-article-format">
               {% include archive_post.html %}
             </article>
-            {% endif %}
             {% endfor %}
           </div>
         </div>
