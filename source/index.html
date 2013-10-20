@@ -16,32 +16,36 @@ layout: default
   <div class="container">
     <div class="row" id="post-container">
       <article class="span4">
-        <div class="article-format">
+        <div class="article-format rectangular-article-format">
           <h1 class="entry-title"><a href="{{ root_url }}/blog/categories/growing-growth-hacker">Journey of a growing growth hacker</a></h1>
           <div id="blog-archives" class="category">
             {% for post in site.categories['Growing Growth Hacker'] %}
+            {% if forloop.index < 3 %}
             <article class="archive-article-format">
               {% include archive_post.html %}
             </article>
+            {% endif %}
             {% endfor %}
           </div>
         </div>
       </article>
       <article class="span4">
-        <div class="article-format">
-          <h1 class="entry-title"><a href="{{ root_url }}/categories/case-studies">Case Studies</a></h1>
+        <div class="article-format rectangular-article-format">
+          <h1 class="entry-title"><a href="{{ root_url }}/blog/categories/case-studies">Case Studies</a></h1>
           <div id="blog-archives" class="category">
             {% for post in site.categories['Case Studies'] %}
+            {% if forloop.index < 3 %}
             <article class="archive-article-format">
               {% include archive_post.html %}
             </article>
+            {% endif %}
             {% endfor %}
           </div>
         </div>
       </article>
       <article class="span4">
-        <div class="article-format">
-          <h1 class="entry-title">About me</h1>
+        <div class="article-format rectangular-article-format">
+          <h1 class="entry-title"><a href="{{ root_url }}/about/">About me</a></h1>
           <div>I am Yuval Qen... I do such and such... and some more brief about me</div>
         </div>
       </article>

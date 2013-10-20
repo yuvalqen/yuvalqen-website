@@ -20,7 +20,6 @@
 }
 #hero-inner {
   font-family: 'Cantarell', sans-serif;
-  margin-top: 50px;
 }
 #hero-inner h1 {
   font-size: 60px;
@@ -61,7 +60,7 @@ article h1 {
 }
 #front-wrapper {
   background-color: #F1F1F1;
-  margin-top: 500px;
+  margin-top: 450px;
   border-top-color: white;
   border-top-style: solid;
   border-top-width: 1px;
@@ -152,6 +151,9 @@ dt .social_icon {
 }
 .article-format {
   padding: 2em;
+}
+.rectangular-article-format {
+    height: 314px;
 }
 .archive-article-format {
   padding: 1em;
