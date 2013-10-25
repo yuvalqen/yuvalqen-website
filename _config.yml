@@ -20,7 +20,8 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: yuval@yuvalqen.com
+phone: +972-52-331-3878
 
 # ----------------------- #
 #    Jekyll & Plugins     #

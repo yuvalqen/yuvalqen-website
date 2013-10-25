@@ -7,6 +7,20 @@
 <script type="text/javascript" src="javascripts/libs/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
+		$(".fancyYouTube").click(function() {
+			$.fancybox({
+				'openEffect' : 'elastic',
+				'closeEffect' : 'elastic',
+				'width' : 520,
+				'height' : 386,
+				'href' : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+				'type' : 'swf',
+				'swf' : {
+					'wmode' : 'transparent',
+					'allowfullscreen' : 'true'
+				}
+			});
+			return false;
+		});
 	});
 </script>
