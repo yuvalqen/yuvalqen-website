@@ -22,6 +22,11 @@ p.widgets { margin: 0 0 8px 0; line-height: 1.5; padding-top: 2px; }
 // Get rid of box-shadow for individual archive entries
 article.archive-article-format { box-shadow: none; padding: 0; }
 
+// Make masonry tiles of fixed height.
+div.rectangular-article-format {
+    height: 314px;
+}
+
 // Add a little space between the top of the archive list and the page title
 #blog-archives { margin-top: 30px; }
 
