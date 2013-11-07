@@ -42,3 +42,12 @@ div.rectangular-article-format {
 .contact-info {
   font-size: 1.5em;
 }
+
+// Styling for pictures inside articles.
+article img {
+  -moz-box-shadow:    3px 3px 3px 3px #222;
+  -webkit-box-shadow: 3px 3px 3px 3px #222;
+  box-shadow:         3px 3px 3px 3px #222;
+  float: right;
+  margin: 5px;  
+}
