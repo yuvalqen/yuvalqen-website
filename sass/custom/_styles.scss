@@ -1,7 +1,7 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-div.speech p
+div.speech div
 {
   position: relative;
   display: inline-block;
@@ -17,7 +17,7 @@ div.speech p
   margin: 10px;
 }
 
-div.speech p:before
+div.speech div:before
 {
   content: ' ';
   position: absolute;
@@ -30,12 +30,12 @@ div.speech p:before
 div.speech.left { text-align: left; }
 div.speech.right { text-align: right; }
 
-div.speech.left p:before {
+div.speech.left div:before {
   left: 30px;
   border-color: #fff transparent transparent #fff;  
 }
 
-div.speech.right p:before {
+div.speech.right div:before {
   right: 30px;  
   border-color: #fff #fff transparent transparent;
 }
@@ -48,5 +48,4 @@ img.portrait {
   -moz-border-radius: 10px;
   border-radius: 10px;
   margin-top: 20px;
-
 }
