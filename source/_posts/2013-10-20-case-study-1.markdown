@@ -1,8 +1,0 @@
----
-layout: post
-title: "Case Study 1"
-date: 2013-10-20 08:44
-comments: true
-categories: [Case Studies]
----
-This is a story about a site named sue...
