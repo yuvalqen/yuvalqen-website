@@ -457,17 +457,29 @@ table {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;  
 }
-#go-to-top.active {
+
+#go-to-next {
+    display:block;
+    cursor: default;
+    z-index:100;
+    outline:none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;  
+}
+
+#go-to-top.active, #go-to-next.active {
     cursor: pointer;
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-#go-to-top.active:hover {
+#go-to-top.active:hover, #go-to-next:hover {
     bottom:10px;
     opacity: 1;
     filter: alpha(opacity=100);
 }
-#go-to-top .icon {
+#go-to-top .icon, #go-to-next .icon {
     line-height: 40px;
     height: 40px;
     width: 40px;
