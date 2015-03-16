@@ -82,3 +82,22 @@ img.portrait {
   margin: 10px;
   display: none;
 }
+
+.business-card {
+  background: white;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  -webkit-box-shadow: 5px 5px 10px 2px #222;
+  -moz-box-shadow: 5px 5px 10px 2px #222;
+  box-shadow: 5px 5px 10px 2px #222;
+
+
+  p a {
+    color: black;
+  }
+
+  .left { text-align: right; }
+  .right { text-align: left; }
+}
