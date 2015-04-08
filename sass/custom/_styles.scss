@@ -86,8 +86,15 @@ img.portrait {
 .business-card {
   background: white;
   color: black;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  width: 250px;
+  height: 400px;
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 200px;    
+  }
+
+  margin: 20px auto 20px;
 
   -webkit-box-shadow: 5px 5px 10px 2px #222;
   -moz-box-shadow: 5px 5px 10px 2px #222;
@@ -100,4 +107,10 @@ img.portrait {
 
   .left { text-align: right; }
   .right { text-align: left; }
+}
+
+.subtitle {
+  font-size: small;
+  color: #bbb;
+  margin: 0 5px 0 5px;
 }
