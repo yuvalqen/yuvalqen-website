@@ -88,7 +88,7 @@ img.portrait {
   color: black;
 
   width: 250px;
-  height: 400px;
+  height: 350px;
   @media (min-width: 768px) {
     width: 400px;
     height: 200px;    
@@ -105,12 +105,24 @@ img.portrait {
     color: black;
   }
 
-  .left { text-align: right; }
-  .right { text-align: left; }
+  .left, .right { text-align: center; }
+  @media (min-width: 768px) { 
+    .right { text-align: right; }
+    .left { text-align: left; }
+  }
+
+  .title { margin: 10px 0 5px; }
+  .subtitle { margin: 5px 0;}
+  .logo { display: block; margin: 20px auto;}
+  .contact_line { margin: 7px; }
+  @media (min-width: 768px) {
+    .contact_line.first { margin-top: 64px; }
+  }
 }
 
 .subtitle {
   font-size: small;
   color: #bbb;
-  margin: 0 5px 0 5px;
 }
+
+#left-sidebar .subtitle { margin: 0 5px 0 5px; }
