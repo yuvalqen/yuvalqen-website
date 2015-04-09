@@ -126,3 +126,13 @@ img.portrait {
 }
 
 #left-sidebar .subtitle { margin: 0 5px 0 5px; }
+
+.trusted_by {
+  margin-top: 130px;
+
+  .client_logo {
+    max-height: 40px;
+    margin: 20px;
+    display: block;
+  }  
+}
