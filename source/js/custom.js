@@ -16,4 +16,10 @@ function randomize_position(i, obj) {
 $(window).load(function()
 {
     $.each($(".tool_logo"), randomize_position);
+
+    setTimeout(function () {
+    	if ($(window).scrollTop() == 0) {
+			$("#services h1").animate({"margin-top": "-=150px", "margin-bottom": "+=150px"}, 200, 'easeOutCubic').animate({"margin-top": "+=150px", "margin-bottom": "-=150px"}, 200, 'easeInCubic');
+    	}
+    }, 5000);
 });

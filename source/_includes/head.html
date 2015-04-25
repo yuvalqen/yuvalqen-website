@@ -24,7 +24,7 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
     <!-- favicon -->
-    <link href="{{ root_url }}/images/other_images/favicon.png" type="image/png" rel="icon">
+    <link href="{{ root_url }}/favicon.png" type="image/png" rel="icon">
 
     {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ canonical }}">

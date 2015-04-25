@@ -18,6 +18,14 @@ div.speech div.speech_bubble_content
   margin: 10px;
 }
 
+div.speech.right div.speech_bubble_content {
+  color: #AAA;
+  border: 2px solid #AAA;
+}
+
+div.speech.left { text-align: left }
+div.speech.right { text-align: right }
+
 div.speech div:before
 {
   content: ' ';
@@ -38,9 +46,6 @@ div.speech div:after
   border: 13px solid;
 }
 
-div.speech.left { text-align: left; }
-div.speech.right { text-align: right; }
-
 div.speech.left div:before {
   left: 15px;
   border-color: #fff transparent transparent #fff;  
@@ -48,7 +53,7 @@ div.speech.left div:before {
 
 div.speech.right div:before {
   right: 15px;  
-  border-color: #fff #fff transparent transparent;
+  border-color: #AAA #AAA transparent transparent;
 }
 
 div.speech.left div:after {
@@ -72,10 +77,6 @@ img.portrait {
   margin-top: 20px;
 }
 
-.section-wrapper {
-  margin-bottom: 40px;
-}
-
 .tool_logo {
   max-width: 150px;
   max-height: 60px;
@@ -87,11 +88,11 @@ img.portrait {
   background: white;
   color: black;
 
-  width: 250px;
-  height: 350px;
+  width: 235px;
+  height: 375px;
   @media (min-width: 768px) {
     width: 400px;
-    height: 200px;    
+    height: 215px;    
   }
 
   margin: 20px auto 20px;
@@ -111,12 +112,14 @@ img.portrait {
     .left { text-align: left; }
   }
 
-  .title { margin: 10px 0 5px; }
+  .title { margin: 25px 0 5px; }
   .subtitle { margin: 5px 0;}
-  .logo { display: block; margin: 20px auto;}
-  .contact_line { margin: 7px; }
+  .logo { display: block; margin: 38px auto;}
+  .contact_line { margin: 7px 0px; }
   @media (min-width: 768px) {
-    .contact_line.first { margin-top: 64px; }
+    .logo { display: block; margin: 2px 15px;}
+    .title { margin-top: 10px }
+    .contact_line.first { margin-top: 20px; }
   }
 }
 
@@ -135,4 +138,8 @@ img.portrait {
     margin: 20px;
     display: block;
   }  
+}
+
+.grid .fa.icon img {
+  height: 50px;
 }
