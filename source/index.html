@@ -74,6 +74,17 @@ MAIN CONTENT
             {% assign bubble_wow_delay = '0.9s' %}
             {% include custom/speech_bubble.html %}
 
+            {% capture bubble_text %}Don't take my word for it, ask these guys:
+          <center class="trusted_by">
+            <img class="client_logo" src="images/other_images/fxempire_logo.png">
+            <img class="client_logo" src="images/other_images/shoppaul_logo.png">
+            <img class="client_logo" src="images/other_images/craftvapery_logo.png">
+          </center>
+            {% endcapture %}
+            {% assign bubble_direction = 'left' %}
+            {% assign bubble_wow_delay = '1.1s' %}
+            {% include custom/speech_bubble.html %}
+
             {% assign bubble_wow_delay = '0.3s' %}
 
           </section>
@@ -81,13 +92,6 @@ MAIN CONTENT
 
       <div class="hidden-xs hidden-sm col-md-3">
         <img class="portrait" src="images/other_images/portrait.jpg">
-         <center>
-          <p class="trusted_by"><b>Trusted By:</b>
-          <img class="client_logo" src="images/other_images/fxempire_logo.png">
-          <img class="client_logo" src="images/other_images/shoppaul_logo.png">
-          <img class="client_logo" src="images/other_images/craftvapery_logo.png">
-          </p>
-         </center>
       </div>      
 
 <!--       <div class="col-xs-12 col-sm-12 col-md-9">
