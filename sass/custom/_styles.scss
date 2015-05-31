@@ -143,3 +143,15 @@ img.portrait {
 .grid .fa.icon img {
   height: 50px;
 }
+
+#tools_section {
+  margin-bottom: -900px;
+}
+
+.upside-down {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
